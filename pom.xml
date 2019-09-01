@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>be.ida_mediafoundry.jetpack</groupId>
-    <artifactId>tool-name</artifactId>
+    <artifactId>sling-resource-merger-content</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
 
-    <name>Jetpack - Tool Name</name>
-    <description>Jetpack Tool Name.</description>
+    <name>Jetpack - Sling Resource Merger in content</name>
+    <description>Jetpack Sling Resource Merger in content.</description>
 
     <organization>
         <name>iDA Mediafoundry</name>
@@ -465,7 +465,7 @@
             <dependency>
                 <groupId>com.adobe.aem</groupId>
                 <artifactId>uber-jar</artifactId>
-                <version>6.4.0</version>
+                <version>6.4.5</version>
                 <classifier>apis</classifier>
                 <scope>provided</scope>
             </dependency>
@@ -473,7 +473,7 @@
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.models.api</artifactId>
-                <version>1.0.0</version>
+                <version>1.3.8</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>

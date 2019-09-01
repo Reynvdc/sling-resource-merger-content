@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <meta charset="utf-8">
+    <title>${currentPage.title || properties['jcr:title']}</title>
+    <meta name="template" content="${properties['cq:template']}"/>
+    <sly data-sly-test="${!wcmmode.disabled}"
+         data-sly-call="${clientlib.all @ categories = [
+            'cq.authoring.page',
+            'cq.shared',
+            'cq.foundation-main',
+            'wcm.foundation.components.parsys.allowedcomponents'
+        ]
+    }"></sly>
+    <sly data-sly-test.clientlibCategories="${currentStyle['clientlibs']}"
+         data-sly-call="${clientlib.all @ categories = clientlibCategories}"></sly>
+</head>
+<body class="${componentContext.cssClassNames}"
+      data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer">
+<sly data-sly-repeat.child="${templatedContainer.structureResources}"
+     data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"/>
+</body>
+</html>
+

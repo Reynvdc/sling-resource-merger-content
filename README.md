@@ -3,12 +3,12 @@
 After using this template to create a new tool repository,
 replace all occurences of the following strings with the new tool name
 
-- Tool Name ( 9 occurences ) 
+- Sling Resource Merger in content ( 9 occurences ) 
 - tool-name ( 14 occurences)
 - toolname ( 8 occurences )
 
 
-# Jetpack - Tool Name
+# Jetpack - Sling Resource Merger in content
 (powered by iDA Mediafoundry)
 
 ## Description
